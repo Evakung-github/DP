@@ -7,6 +7,8 @@ Created on Tue Jan  7 14:14:48 2020
 
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+        #Initialize a dp.
+        #If it is true, it means that word can be start with the next word.
         dp = [True]+[False]*len(s)
         
         for i in range(1+len(s)):
@@ -22,7 +24,8 @@ class Solution:
         
         
         
-        
+# should check one by one, replacement isn't a good idea.
+
 #         if s.replace(' ','') == '':
 #             return True
 #         elif len(wordDict)==0:
@@ -46,7 +49,7 @@ class Solution:
 #                 return False
         
         
-        
+# too slow       
 #         ans = False
         
 #         for i in range(len(wordDict)):
