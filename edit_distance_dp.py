@@ -4,6 +4,8 @@ Created on Fri Feb 14 11:27:39 2020
 
 @author: eva
 """
+
+# test
 # Up:insert
 # Left:delete
 class Solution:
